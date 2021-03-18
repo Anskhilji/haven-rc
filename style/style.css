@@ -1,0 +1,333 @@
+/*section 1 slider*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto+Mono:wght@100;300&family=Syne+Mono&display=swap');
+
+.logo {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    width: 25%;
+    z-index: 9;
+
+}
+
+.font-box {
+    position: absolute;
+    color: white;
+    top: 270px;
+    left: 100px;
+
+}
+
+.font-box h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.font-box h3 {
+    font-family: "Cochin LT W01 Roman";
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.fa-bars {
+    z-index: 41;
+    position: absolute;
+    color: white;
+    right: 60px;
+    top: 60px;
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+}
+
+
+/*End section 1 slider*/
+
+/* Section 1*/
+.img-bg {
+    background: url("../images/havenrc_content/2-WhoWeAre/1.jpg") no-repeat center center;
+    width: 100%;
+    height: 685px;
+    background-attachment: fixed;
+}
+
+.flex-who {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.hv-title {
+    color: #004576;
+    font-family: 'Recursive', sans-serif;
+
+    font-size: 1.7rem;
+
+}
+
+.who_we{
+    margin-right: 30%;
+}
+
+.hv-title .cochin {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-family: "Cochin LT W01 Roman";
+
+}
+
+.hv-title .helv-ult {
+    font-size: .8em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+
+/*tabs*/
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #F0FAFF;
+    color: gray;
+}
+
+.clr {
+    color: gray;
+    margin-bottom: 85px;
+}
+/*end tabs*/
+
+.nv-pill a {
+    position: relative;
+}
+
+.nv-pill a:after {
+    content: " ";
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid gray;
+    position: absolute;
+    top: 5px;
+    right: -33px;
+    position: absolute;
+    z-index: 9999;
+}
+
+
+.nv-pill a.active:after {
+    background-color: #004576;
+}
+
+/*End Section 1*/
+
+
+/* Section 2*/
+.img-bg1 {
+    background: url("../images/havenrc_content/2-WhoWeAre/2.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 685px;
+    background-attachment: fixed;
+
+}
+
+.clr1 {
+    color: #ffffff;
+    background-color: #004576 !important;
+    margin-bottom: 85px;
+}
+
+.nv-pill1 a {
+    position: relative;
+}
+
+.nv-pill1 a:after {
+    content: " ";
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #004576;
+    border: 3px solid gray;
+    position: absolute;
+    top: 5px;
+    right: -33px;
+    position: absolute;
+    z-index: 9999;
+}
+
+
+.nv-pill1 a.active:after {
+    background-color: #ffffff;
+}
+
+.invest-h2 {
+    font-family: "Cochin LT W01 Roman";
+    font-size: 2.1em;
+    text-transform: capitalize;
+    color: #004576
+}
+
+
+/*End Section 2*/
+.login {
+    height: 250px
+}
+
+/*Start Section 4*/
+.invest-title {
+    color: #FFFFFF;
+}
+
+.contact-img-bg {
+    background: url("../images/havenrc_content/5-GetInTouchWithUs/map.jpg") no-repeat center center;
+    height: 685px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.contact-logo {
+    /*width: 250px;*/
+}
+
+.contact-logo img {
+    width: 100%;
+    max-width: 200px
+}
+
+.contact-label {
+    color: #ffffff;
+}
+
+.input-bg-b {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    color: white;
+}
+
+.input-bg-b:focus, .input-bg-b:active {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    outline: none;
+    box-shadow: none;
+    color: white;
+
+}
+
+.input-bg-b::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FFFFFF;
+    opacity: 0.5; /* Firefox */
+    font-size: 20px;
+}
+
+.hv-button-2 {
+    font-family: 'Cochin LT W01 Roman';
+    text-transform: uppercase;
+    width: 160px;
+    height: 40px;
+    color: #fff;
+    margin: 0 25%;
+    background-color: #004576;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    border: 0px;
+}
+
+/*End Section 4*/
+
+
+/*Start Section 5*/
+.bg-clr {
+    background-color: #0B1720;
+}
+
+.footer-logo {
+    max-width: 380px;
+    margin: 100px 0px 40px 0;
+}
+
+.footer-logo img {
+    width: 100%;
+}
+
+.address-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 1em;
+    margin-bottom: 100px;
+}
+
+/*End Section 5*/
+
+/*nav start*/
+.nav-bg {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #004576;
+    z-index: 99;
+}
+
+.ul-dots {
+    list-style: none;
+    width: 100%;
+    font-size: 40px;
+}
+
+
+.ul-dots .li-style{
+    padding: 10px 10px;
+    margin: 5px 0px;
+    font-family: "Cochin LT W01 Roman";
+
+}
+.ul-dots .li-style a{
+    list-style-type: none;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.ul-dots .li-style a:hover {
+    background: #FFFFFF;
+    padding: 10px 20px;
+    color: #3d3d3d;
+}
+
+.ul-dots .li-style a:hover, .ul-dots > .down-arrow {
+    color: #3d3d3d;
+
+}
+
+.cancel-btn{
+    float: right;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+
+.cancel-btn:hover{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+/*nav end*/
