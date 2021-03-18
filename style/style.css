@@ -172,9 +172,14 @@
     text-transform: capitalize;
     color: #004576
 }
+.who-we-image-main{
+    min-height: 605px;
+}
 
 .p-mb-setting{
     margin-bottom: 0px;
+    overflow: hidden;
+    font-size: 15px;
 }
 /*End Section 2*/
 .login {
@@ -188,7 +193,7 @@
 
 .contact-img-bg {
     background: url("../images/havenrc_content/5-GetInTouchWithUs/map.jpg") no-repeat center center;
-    height: 685px;
+    height: 100%;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
