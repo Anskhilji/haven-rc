@@ -173,7 +173,9 @@
     color: #004576
 }
 
-
+.p-mb-setting{
+    margin-bottom: 0px;
+}
 /*End Section 2*/
 .login {
     height: 250px
