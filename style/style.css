@@ -43,7 +43,9 @@
 .fa-bars:hover {
     cursor: pointer;
 }
-
+.full-view-port{
+    height: 100vh;
+}
 
 /*End section 1 slider*/
 
