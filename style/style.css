@@ -226,7 +226,7 @@
 
 .overlay-container {
     position: relative;
-    width: 200px;
+    width: 220px;
     cursor: pointer;
 }
 
@@ -258,6 +258,17 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.caption {
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    top: 80%;
+    left: 48.5%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -342,7 +353,6 @@
 /*End Section 2*/
 .login {
     height: 250px
-
 }
 
 /*Start Section 4*/
