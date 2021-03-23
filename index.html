@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="js/custom.js"></script>
     <title>Haven Realty Capital</title>
 </head>
 <body>
@@ -44,31 +45,41 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
         </ol>
 
         <div class="carousel-inner">
             <i class="fa fa-bars fa-3x " id="open-nav" aria-hidden="true"></i>
             <img src="images/havenrc_content/1-TopSlider/HavenW.png" class="logo slide-1" alt="...">
-
             <div class="carousel-item active full-view-port">
-                <img src="images/havenrc_content/1-TopSlider/slide1.jpg" class="d-block w-100" alt="...">
+                <video autoplay loop class="video-style">
+                    <source src="images/havenrc_content/1-TopSlider/NewSlide1.mp4" type="video/mp4">
+                </video>
                 <div class="font-box">
-                    <h4>STRATEGIC INVESTMENT</h4>
-                    <h3>Various Residential Segments</h3>
+                    <h4>IDENTIFYING OPPORTUNITY</h4>
+                    <h3>Adding Value</h3>
                 </div>
             </div>
             <div class="carousel-item full-view-port">
+                <img src="images/havenrc_content/1-TopSlider/slide1.jpg" class="d-block w-100" alt="...">
+                <div class="font-box">
+                    <h4>IDENTIFYING OPPORTUNITY</h4>
+                    <h3>Adding Value</h3>
+                </div>
+            </div>
+
+            <div class="carousel-item full-view-port">
                 <img src="images/havenrc_content/1-TopSlider/slide2.jpg" class="d-block w-100" alt="...">
                 <div class="font-box">
-                    <h4>STRATEGIC INVESTMENT</h4>
-                    <h3>Various Residential Segments</h3>
+                    <h4>IDENTIFYING OPPORTUNITY</h4>
+                    <h3>Adding Value</h3>
                 </div>
             </div>
             <div class="carousel-item full-view-port">
                 <img src="images/havenrc_content/1-TopSlider/slide3.jpg" class="d-block w-100" alt="...">
                 <div class="font-box">
-                    <h4>STRATEGIC INVESTMENT</h4>
-                    <h3>Various Residential Segments</h3>
+                    <h4>IDENTIFYING OPPORTUNITY</h4>
+                    <h3>Adding Value</h3>
                 </div>
             </div>
         </div>
@@ -543,25 +554,50 @@
     </div>
 </div>
 
-<div class="container-fluid">
-    <div class="row login">
-          <div class="col-md-3 d-flex justify-content-center align-items-center invest-h2">
-              <h2>Invester Login</h2>
-          </div>
-          <div class="col-md-9 d-flex justify-content-center align-items-center">
-              <form action="" class="form-inline">
-                  <div class="form-group mr-2">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control ml-4" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="form-group mr-2">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control ml-4" id="exampleInputPassword1">
-                  </div>
+<div class="container-fluid observer-counter">
+    <div class="row login p-0 m-0">
+        <div class="counter-main">
+                    <h2>Heaven Reality Capital at a glance</h2>
+           <div class="d-flex mb-5">
+               <div class="row mr-4 d-flex justify-content-center align-items-center border-bottom">
+                   <div class="col-md-4 p-4">
+                       <div class="counter mb-2 counter-plus" data-target="100">0</div>
+                       <div class="counter-caption">Years of Combined Experience</div>
+                   </div>
+                   <div class="col-md-4 p-4">
+                       <div class="counter mb-2 counter-plus" data-target="100">0</div>
+                       <div class="counter-caption">Total Investment Venture</div>
+                   </div>
 
-                  <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-          </div>
+                   <div class="col-md-4 p-4">
+                       <div class="counter mb-2 counter-plus" data-target="5">0</div>
+                       <div class="counter-caption">Investment Markets</div>
+                   </div>
+
+               </div>
+               <div class="p-5 counter-big-main">
+                   <div class="counter-big mb-2">$<span class="counter-plus" data-target="375">0</span>M</div>
+                   <div class="counter-caption">Portfolio Value</div>
+               </div>
+           </div>
+        </div>
+<!--          <div class="col-md-3 d-flex justify-content-center align-items-center invest-h2">-->
+<!--              <h2>Invester Login</h2>-->
+<!--          </div>-->
+<!--          <div class="col-md-9 d-flex justify-content-center align-items-center">-->
+<!--              <form action="" class="form-inline">-->
+<!--                  <div class="form-group mr-2">-->
+<!--                      <label for="exampleInputEmail1">Email address</label>-->
+<!--                      <input type="email" class="form-control ml-4" id="exampleInputEmail1" aria-describedby="emailHelp">-->
+<!--                  </div>-->
+<!--                  <div class="form-group mr-2">-->
+<!--                      <label for="exampleInputPassword1">Password</label>-->
+<!--                      <input type="password" class="form-control ml-4" id="exampleInputPassword1">-->
+<!--                  </div>-->
+
+<!--                  <button type="submit" class="btn btn-primary">Submit</button>-->
+<!--              </form>-->
+<!--          </div>-->
     </div>
 </div>
 
@@ -622,156 +658,9 @@
 </div>
 <!--    End SECTION 5 -->
 
-
-<!-- Optional JavaScript; choose one of the two! -->
-
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
--->
-<script>
-<!--    WHOW WE ARE JS-->
-    $('.second').click(function(){
-        // alert('sadf');
-        $('.img-bg').css('background','url("images/havenrc_content/2-WhoWeAre/2.jpg") no-repeat center center');
-        $('.img-bg').css('background-size','cover');
-        $('.teams-img-main').addClass('hidden');
-        $('.img-bg').removeClass('hidden');
-        // $('.img-bg').css('width','');
-    })
-    $('.first').click(function(){
-        // alert('sadf');
-        $('.img-bg').css('background','url("images/havenrc_content/2-WhoWeAre/1.jpg") no-repeat center center');
-        $('.img-bg').css('background-size','cover');
-        $('.teams-img-main').addClass('hidden');
-        $('.img-bg').removeClass('hidden');
-        // $('.img-bg').css('width','');
-    })
-    $('.third').click(function(){
-        // alert('sadf');
-        $('.img-bg').addClass('hidden');
-        $('.teams-img-main').removeClass('hidden');
-        // $('.img-bg').css('width','');
-    })
-</script>
-<script>
-<!--    Investors JS-->
-    $('.second-invest').click(function(){
-        // alert('sadf');
-        $('.img-bg1').css('background','url("images/havenrc_content/3-InvestmentStrategy/2.jpg") no-repeat center center');
-        $('.img-bg1').css('background-size','cover');
-        // $('.img-bg').css('width','');
-    })
-    $('.first-invest').click(function(){
-        // alert('sadf');
-        $('.img-bg1').css('background','url("images/havenrc_content/3-InvestmentStrategy/1.jpg") no-repeat center center');
-        $('.img-bg1').css('background-size','cover');
-        // $('.img-bg').css('width','');
-    })
-    $('.third-invest').click(function(){
-        // alert('sadf');
-        $('.img-bg1').css('background','url("images/havenrc_content/3-InvestmentStrategy/3.jpg") no-repeat center center');
-        $('.img-bg1').css('background-size','cover');
-        // $('.img-bg').css('width','');
-    })
-</script>
-
-<script>
-<!--    Navbar JS-->
-    const openNav = document.querySelector('#open-nav');
-    const navBar = document.querySelector('#navbar');
-    const closeNav = document.querySelector('#cancel_nav');
-    const showSubMenu = document.querySelector('#show-sub-menu');
-    const removeHiddenSubMenu = document.querySelector('#sub_menu_hidden');
-
-    openNav.addEventListener('click', function () {
-       navBar.classList.remove('d-none');
-    });
-
-    closeNav.addEventListener('click',function () {
-        navBar.classList.add('d-none');
-
-    });
-
-    showSubMenu.addEventListener('click', function (e){
-       e.preventDefault();
-        removeHiddenSubMenu.classList.toggle('hidden');
-    });
-
-    //Team Model JS img 1
-    const showModel = document.querySelector('.show-model');
-    const removeHidden = document.querySelector('.remove-hidden');
-    const cancelModel = document.querySelector('.close');
-    showModel.addEventListener('click', function () {
-        removeHidden.classList.remove('hidden');
-    });
-
-    cancelModel.addEventListener('click', function (){
-        removeHidden.classList.add('hidden');
-    });
-//Team Model JS img 2
-const showModel2 = document.querySelector('.show-model-2');
-const removeHidden2 = document.querySelector('.remove-hidden-2');
-const cancelModel2 = document.querySelector('.close-2');
-showModel2.addEventListener('click', function () {
-    removeHidden2.classList.remove('hidden');
-});
-
-cancelModel2.addEventListener('click', function (){
-    removeHidden2.classList.add('hidden');
-});
-//Team Model JS img 3
-const showModel3 = document.querySelector('.show-model-3');
-const removeHidden3 = document.querySelector('.remove-hidden-3');
-const cancelModel3 = document.querySelector('.close-3');
-showModel3.addEventListener('click', function () {
-    removeHidden3.classList.remove('hidden');
-});
-
-cancelModel3.addEventListener('click', function (){
-    removeHidden3.classList.add('hidden');
-});
-//Team Model JS img 4
-const showModel4 = document.querySelector('.show-model-4');
-const removeHidden4 = document.querySelector('.remove-hidden-4');
-const cancelModel4 = document.querySelector('.close-4');
-showModel4.addEventListener('click', function () {
-    removeHidden4.classList.remove('hidden');
-});
-
-cancelModel4.addEventListener('click', function (){
-    removeHidden4.classList.add('hidden');
-});
-
-//Team Model JS img 5
-const showModel5 = document.querySelector('.show-model-5');
-const removeHidden5 = document.querySelector('.remove-hidden-5');
-const cancelModel5 = document.querySelector('.close-5');
-showModel5.addEventListener('click', function () {
-    removeHidden5.classList.remove('hidden');
-});
-
-cancelModel5.addEventListener('click', function (){
-    removeHidden5.classList.add('hidden');
-});
-
-//Team Model JS img 6
-const showModel6 = document.querySelector('.show-model-6');
-const removeHidden6 = document.querySelector('.remove-hidden-6');
-const cancelModel6 = document.querySelector('.close-6');
-showModel6.addEventListener('click', function () {
-    removeHidden6.classList.remove('hidden');
-});
-
-cancelModel6.addEventListener('click', function (){
-    removeHidden6.classList.add('hidden');
-});
-</script>
 </body>
 </html>
