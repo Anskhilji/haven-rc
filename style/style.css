@@ -192,7 +192,9 @@
 }
 
 /*teams image with overlay*/
-
+.our-team-outer-hw{
+    padding: 50px 0px 50px 0px;
+}
 .teams-img-main {
     padding: 20px 0px 20px 0px;
 }
@@ -360,7 +362,7 @@
 
 .counter-main > h2 {
     color: #004576;
-    margin: 10px 0px 0px 10px;
+    margin: 10px 0px 0px 60px;
     font-family: "Cochin LT W01 Roman";
 
 }
@@ -478,7 +480,7 @@
 }
 
 .news-outer-hw{
-    padding: 60px 0px 60px 0px;
+    padding: 50px 0px 50px 0px;
 }
 
 /*Start Section 5*/
