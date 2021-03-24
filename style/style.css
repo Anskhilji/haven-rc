@@ -376,7 +376,7 @@
 }
 
 .counter-caption {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     font-family: "Cochin LT W01 Roman";
 
@@ -396,7 +396,9 @@
     font-weight: bold;
     color: #004576;
 }
-
+.inline-text{
+    width: 500px;
+}
 /*Start Section 4*/
 .invest-title {
     color: #FFFFFF;
