@@ -194,8 +194,7 @@
 /*teams image with overlay*/
 
 .teams-img-main {
-    height: 685px;
-    padding: 20px 0px 0px 18px;
+    padding: 20px 0px 20px 0px;
 }
 
 .team-img-outer1 {
@@ -477,6 +476,11 @@
     font-size: 1.7rem;
 
 }
+
+.news-outer-hw{
+    padding: 60px 0px 60px 0px;
+}
+
 /*Start Section 5*/
 .bg-clr {
     background-color: #0B1720;
