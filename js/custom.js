@@ -3,24 +3,17 @@ $('.second').click(function(){
     // alert('sadf');
     $('.img-bg').css('background','url("images/havenrc_content/2-WhoWeAre/2.jpg") no-repeat center center');
     $('.img-bg').css('background-size','cover');
-    $('.teams-img-main').addClass('hidden');
     $('.img-bg').removeClass('hidden');
     // $('.img-bg').css('width','');
 })
 $('.first').click(function(){
     // alert('sadf');
     $('.img-bg').css('background','url("images/havenrc_content/2-WhoWeAre/1.jpg") no-repeat center center');
-    $('.img-bg').css('background-size','cover');
-    $('.teams-img-main').addClass('hidden');
+    // $('.img-bg').css('background-size','cover');
     $('.img-bg').removeClass('hidden');
     // $('.img-bg').css('width','');
 })
-$('.third').click(function(){
-    // alert('sadf');
-    $('.img-bg').addClass('hidden');
-    $('.teams-img-main').removeClass('hidden');
-    // $('.img-bg').css('width','');
-})
+
 
 // <!--    Investors JS-->
 $('.second-invest').click(function(){
@@ -143,7 +136,7 @@ const counterSection = document.querySelector('.observer-counter');
 
 const obsCallBack = function (entries,observer) {
     const [entry] = entries;
-    console.log(entry);
+    // console.log(entry);
     if (!entry.isIntersecting) return;
 
     // Animated Counter
@@ -168,7 +161,7 @@ const obsCallBack = function (entries,observer) {
 
 const obsOptions = {
     root: null,
-    threshold: 0.2
+    threshold: 0.3
 }
 
 const CounterObserver = new IntersectionObserver(obsCallBack,obsOptions);

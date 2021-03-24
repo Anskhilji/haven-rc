@@ -11,9 +11,9 @@
 
 .logo {
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 100px;
-    width: 25%;
+    width: 20%;
     z-index: 9;
 
 }
@@ -21,7 +21,7 @@
 .font-box {
     position: absolute;
     color: white;
-    top: 270px;
+    top: 350px;
     left: 100px;
 
 }
@@ -60,8 +60,8 @@
 .img-bg {
     background: url("../images/havenrc_content/2-WhoWeAre/1.jpg") no-repeat center center;
     width: 100%;
-    height: 685px;
-    background-attachment: fixed;
+    height: 100%;
+    /*background-attachment: fixed;*/
     background-size: cover;
 }
 
@@ -74,9 +74,7 @@
 .hv-title {
     color: #004576;
     font-family: 'Recursive', sans-serif;
-
     font-size: 1.7rem;
-
 }
 
 .who_we {
@@ -142,8 +140,8 @@
 .img-bg1 {
     background: url("../images/havenrc_content/2-WhoWeAre/2.jpg") no-repeat center center;
     width: 100%;
-    height: 685px;
-    background-attachment: fixed;
+    height: 100%;
+    /*background-attachment: fixed;*/
     background-size: cover;
 }
 
@@ -469,8 +467,16 @@
 }
 
 /*End Section 4*/
+.news-title{
+    color: #004576;
+    font-family: 'Recursive', sans-serif;
+    font-size: 1.7rem;
+}
+.news-headline{
+    color: #004576;
+    font-size: 1.7rem;
 
-
+}
 /*Start Section 5*/
 .bg-clr {
     background-color: #0B1720;
