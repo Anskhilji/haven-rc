@@ -471,11 +471,16 @@
 /*End Section 4*/
 .news-title {
     color: #004576;
-    font-family: 'Recursive', sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
 }
+.news-title .cochin {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-family: "Cochin LT W01 Roman";
+    font-weight: bold;
 
-/*End Section 4*/
+}
+    /*End Section 4*/
 
 .news-headline{
     color: #004576;
