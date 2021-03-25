@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto+Mono:wght@100;300&family=Syne+Mono&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 .video-style {
     width: 100vw;
     height: 100vh;
@@ -15,7 +17,7 @@
     left: 100px;
     width: 15%;
     z-index: 9;
-
+    cursor: pointer;
 }
 
 .font-box {
@@ -512,7 +514,10 @@
     padding-top: 1em;
     margin-bottom: 100px;
 }
-
+.address-content > a {
+    text-decoration: none;
+    color: #ffffff;
+}
 /*End Section 5*/
 
 /*nav start*/
