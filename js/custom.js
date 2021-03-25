@@ -1,15 +1,17 @@
 <!--    WHOW WE ARE JS-->
 $('.second').click(function(){
     // alert('sadf');
-    $('.img-bg').css('background','url("images/havenrc_content/2-WhoWeAre/2.jpg") no-repeat center center');
+    $('.img-bg').css('background','url("images/havenrc_content/2-WhoWeAre/2.jpg") no-repeat center center fixed');
     $('.img-bg').css('background-size','cover');
+    // $('.img-bg').css('background-attachment','fixed');
     $('.img-bg').removeClass('hidden');
     // $('.img-bg').css('width','');
 })
 $('.first').click(function(){
     // alert('sadf');
-    $('.img-bg').css('background','url("images/havenrc_content/2-WhoWeAre/1.jpg") no-repeat center center');
-    // $('.img-bg').css('background-size','cover');
+    $('.img-bg').css('background','url("images/havenrc_content/2-WhoWeAre/1.jpg") no-repeat center center fixed');
+    $('.img-bg').css('background-size','cover');
+    // $('.img-bg').css('background-attachment','fixed');
     $('.img-bg').removeClass('hidden');
     // $('.img-bg').css('width','');
 })
