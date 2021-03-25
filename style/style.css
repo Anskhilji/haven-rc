@@ -469,11 +469,14 @@
 }
 
 /*End Section 4*/
-.news-title{
+.news-title {
     color: #004576;
     font-family: 'Recursive', sans-serif;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
 }
+
+/*End Section 4*/
+
 .news-headline{
     color: #004576;
     font-size: 1.7rem;
