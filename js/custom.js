@@ -1,3 +1,17 @@
+ /*start nav link smooth scrolling*/
+ document.querySelectorAll('.nav_link').forEach(el => {
+    el.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = this.getAttribute('href');
+        console.log(id);
+        document.querySelector(id).scrollIntoView({
+            behavior: "smooth"
+        });
+    })
+ });
+
+ /*ENd nav link smooth scrolling*/
+
 <!--    WHOW WE ARE JS-->
 $('.second').click(function(){
     // alert('sadf');

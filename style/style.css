@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto+Mono:wght@100;300&family=Syne+Mono&display=swap');
-html{
-    scroll-behavior: smooth;
-}
+/*html{*/
+/*    scroll-behavior: smooth;*/
+/*}*/
 .video-style {
     width: 100vw;
     height: 100vh;
@@ -55,7 +55,11 @@ html{
 .full-view-port {
     height: 100vh;
 }
-
+.carousel-caption {
+    right: 10% !important;
+    left: 10% !important;
+    bottom: 50px;
+}
 /*End section 1 slider*/
 
 /* Section 1*/
@@ -483,7 +487,12 @@ html{
 
 }
     /*End Section 4*/
-
+/* start invest tabs css*/
+.invst_click_more a{
+    color: red;
+    text-decoration: underline;
+}
+/* end invest tabs css*/
 .news-headline{
     color: #004576;
     font-size: 1.2rem;
