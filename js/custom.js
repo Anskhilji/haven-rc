@@ -1,17 +1,17 @@
 <!--    WHOW WE ARE JS-->
 $('.second').click(function(){
     // alert('sadf');
-    $('.img-bg').css('background','url("images/havenrc_content/2-WhoWeAre/2.jpg") no-repeat center center fixed');
+    $('.img-bg').css('background','url("images/havenrc_content/2-WhoWeAre/2.jpg") no-repeat center center');
     $('.img-bg').css('background-size','cover');
-    // $('.img-bg').css('background-attachment','fixed');
+    $('.img-bg').css('background-attachment','fixed');
     $('.img-bg').removeClass('hidden');
     // $('.img-bg').css('width','');
 })
 $('.first').click(function(){
     // alert('sadf');
-    $('.img-bg').css('background','url("images/havenrc_content/2-WhoWeAre/1.jpg") no-repeat center center fixed');
+    $('.img-bg').css('background','url("images/havenrc_content/2-WhoWeAre/1.jpg") no-repeat center center');
     $('.img-bg').css('background-size','cover');
-    // $('.img-bg').css('background-attachment','fixed');
+    $('.img-bg').css('background-attachment','fixed');
     $('.img-bg').removeClass('hidden');
     // $('.img-bg').css('width','');
 })
@@ -22,18 +22,24 @@ $('.second-invest').click(function(){
     // alert('sadf');
     $('.img-bg1').css('background','url("images/havenrc_content/3-InvestmentStrategy/2.jpg") no-repeat center center');
     $('.img-bg1').css('background-size','cover');
+    $('.img-bg1').css('background-attachment','fixed');
+
     // $('.img-bg').css('width','');
 })
 $('.first-invest').click(function(){
-    // alert('sadf');
+    // alert('sadf')
     $('.img-bg1').css('background','url("images/havenrc_content/3-InvestmentStrategy/1.jpg") no-repeat center center');
     $('.img-bg1').css('background-size','cover');
+    $('.img-bg1').css('background-attachment','fixed');
+
     // $('.img-bg').css('width','');
 })
 $('.third-invest').click(function(){
     // alert('sadf');
     $('.img-bg1').css('background','url("images/havenrc_content/3-InvestmentStrategy/3.jpg") no-repeat center center');
     $('.img-bg1').css('background-size','cover');
+    $('.img-bg1').css('background-attachment','fixed');
+
     // $('.img-bg').css('width','');
 })
 

@@ -212,7 +212,7 @@ html{
     display: flex;
     flex: 1;
     /*flex-wrap: wrap;*/
-    gap: 12px;
+    gap: 17px;
     justify-content: center
 }
 
@@ -220,7 +220,7 @@ html{
     height: 200px;
     display: flex;
     flex: 1;
-    gap: 12px;
+    gap: 17px;
     justify-content: center
 }
 
@@ -364,7 +364,7 @@ html{
 
 .counter-main > h2 {
     color: #004576;
-    margin: 10px 0px 0px 60px;
+    margin: 20px 0px 0px 0px;
     font-family: "Cochin LT W01 Roman";
 
 }
@@ -486,8 +486,8 @@ html{
 
 .news-headline{
     color: #004576;
-    font-size: 1.7rem;
-
+    font-size: 1.2rem;
+    margin-top: 15px;
 }
 
 .news-outer-hw{
