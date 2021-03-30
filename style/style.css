@@ -60,7 +60,47 @@
     left: 10% !important;
     bottom: 50px;
 }
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    .logo {
+        width: 20%;
+    }
+    .fa-3x {
+        font-size: 2.7em !important;
+    }
+    .video-style {
+        height: auto;
+    }
+    .full-view-port{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .logo {
+        top: 60px;
+        width: 23%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        width: 23%;
+        top: 40px;
+        left: 50px;
+
+    }
+    .fa-3x {
+        font-size: 2.3em !important;
+        top: 40px;
+    }
+}
+
 /*End section 1 slider*/
+
+
+
 
 /* Section 1*/
 .img-bg {
@@ -208,22 +248,25 @@
 .team-img-outer1 {
     height: 200px;
     display: flex;
+    flex: 1;
+    /*flex-wrap: wrap;*/
     justify-content: center;
 }
 
 .team-img-outer2 {
-    height: 200px;
+    /*height: 200px;*/
     display: flex;
     flex: 1;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     gap: 17px;
     justify-content: center
 }
 
 .team-img-outer3 {
-    height: 200px;
+    /*height: 200px;*/
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
     gap: 17px;
     justify-content: center
 }
@@ -237,7 +280,7 @@
 
 .overlay-container {
     position: relative;
-    width: 220px;
+    width: 170px;
     cursor: pointer;
 }
 
