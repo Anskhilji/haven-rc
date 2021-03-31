@@ -1,0 +1,17 @@
+.nav-single-family-bg{
+    width: 100%;
+}
+
+.nav-single-family-bg > img{
+    width: 100%;
+
+}
+.single-title h3{
+    color: #004576;
+    margin: 20px 0px 20px 0px;
+    font-family: "Cochin LT W01 Roman";
+}
+.single-p {
+    color: #004576;
+    font-size: 13px;
+}

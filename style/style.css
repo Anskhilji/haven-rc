@@ -44,7 +44,7 @@
     z-index: 41;
     position: absolute;
     color: white;
-    right: 60px;
+    right: 90px;
     top: 60px;
 }
 
@@ -615,7 +615,7 @@
 
 .cancel-btn {
     float: right;
-    margin-right: 50px;
+    margin-right: 80px;
     margin-top: 60px;
 }
 

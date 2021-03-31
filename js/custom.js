@@ -45,8 +45,6 @@ $('.third-invest').click(function(){
     // $('.img-bg').css('width','');
 })
 
-
-
 // <!--    Navbar JS-->
 const openNav = document.querySelector('#open-nav');
 const navBar = document.querySelector('#navbar');
@@ -62,7 +60,6 @@ closeNav.addEventListener('click',function () {
     navBar.classList.add('d-none');
 
 });
-
 showSubMenu.addEventListener('click', function (e){
     e.preventDefault();
     removeHiddenSubMenu.classList.toggle('hidden');
