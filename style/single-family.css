@@ -1,5 +1,6 @@
 .nav-single-family-bg{
     width: 100%;
+    position: relative;
 }
 
 .nav-single-family-bg > img{
@@ -15,3 +16,40 @@
     color: #004576;
     font-size: 13px;
 }
+.single-fam-logo{
+    position: absolute;
+    top: 55px;
+    left: 100px;
+    width: 15%;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.single-fam-logo img{
+    width: 100%;
+}
+/* map */
+.state-title {
+    border-bottom: 2px solid #004275;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.state-title h2{
+    color: #004576;
+    margin: 20px 0px 20px 0px;
+    font-family: "Cochin LT W01 Roman";
+}
+
+.state-ul li{
+    line-height: 35px;
+}
+.state-ul li a{
+    color: #004576;
+}
+/*model bella*/
+.heading-bella-view{
+    color: #004576;
+    margin: 20px 0px 20px 0px;
+    font-family: "Cochin LT W01 Roman";
+}
+/* End model bella*/

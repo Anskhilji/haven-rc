@@ -52,12 +52,17 @@
     </div>
 </div>
 <!--nav-->
+<!-- bg-->
 <div class="nav-single-family-bg">
     <i class="fa fa-bars fa-3x" id="open-nav" aria-hidden="true"></i>
+    <div class="single-fam-logo">
+        <img src="images/havenrc_content/1-TopSlider/HavenW.png" alt="..."/>
+    </div>
     <img src="./images/havenrc_content/single-family/nav_background.jpg" alt="nav-bg">
 </div>
+<!-- end bg-->
 
-
+<!--map-->
 <div>
     <div class="row p-0 m-0">
         <div class="col-md-8 m-auto">
@@ -74,10 +79,47 @@
             <div id="map" style="width: 500px; height: 300px;"></div>
         </div>
         <div class="col-md-4 pt-5 pb-5">
-            <div id="clicked-state"></div>
+            <div id="clicked-state" class="bella_view">
+
+            </div>
+
         </div>
     </div>
 </div>
+
+<!--bella view model-->
+<div class="row m-0 model-bg-transparent remove-hidden hidden">
+    <div class="col-md-12 model-center">
+        <div class="model-border">
+            <div class="row model-border-radius">
+                <div class="col-md-3 m-0 p-0">
+                    <div class="img-main-center">
+                        <div>
+                            <img src="images/havenrc_content/single-family/Bella-View.jpg" alt="model-img-1"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 p-4">
+                    <div>
+                        <div class="model-close">
+                            <i class="fa fa-times close" aria-hidden="true" style="color: black"></i>
+                        </div>
+                        <div class="heading-bella-view">
+                            <h1>Bella View, located in Snellvila</h1>
+                        </div>
+                        <p>
+                            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End bella view model-->
+<!--end map-->
+
+
 
 <!--    SECTION 4 -->
 <div class="container-fluid" id="section--5">
@@ -146,7 +188,6 @@
 </div>
 
 <!--    End SECTION 4 -->
-
 <!--    Start SECTION 5 -->
 <div class="container-fluid">
     <div class="row bg-clr">
@@ -175,15 +216,42 @@
 <script src="js/map/us-map-1.0.1/example/color.jquery.js"></script>
 
 <script>
-    $('#map').usmap({
 
+    $('#map').usmap({
+        showLabels: false,
         // The click action
         click: function(event, data) {
-            $('#clicked-state')
-                .text('You clicked: '+data.name)
+            if(data.name == 'GA'){
+                $('#clicked-state').empty();
+                $('#clicked-state').append( "<div class=\"state-title\">\n" +
+                    "                    <h2>Georgia</h2>\n" +
+                    "                </div>\n" +
+                    "                <ul class=\"state-ul m-0 p-0\">\n" +
+                    "                    <li><a href=\"#\" class='bella_view'>Bella View, located in Snellvila</a></li>\n" +
+                    "                    <li><a href=\"#\">The Reserve, located in Dallas</a></li>\n" +
+                    "                    <li><a href=\"#\">Macland Phase 2, located in Dallas</a></li>\n" +
+                    "                    <li><a href=\"#\">Trickum Hills, located in Lawrence ville</a></li>\n" +
+                    "                    <li><a href=\"#\">Moss Pointe, located in Canton</a></li>\n" +
+                    "                    <li><a href=\"#\">Magnolia Trace, located in Holly Springs</a></li>\n" +
+                    "                </ul>" );
+                    // .text('You clicked: '+data.name)
+
+            }else {
+                $('#clicked-state').empty();
+            }
+
                 // .parent().effect('highlight', {color: '#C7F464'}, 2000);
+
         },
         stateStyles: {fill: '#E9E9E9'},
+        // stateSpecificStyles: {
+        //     'GA': {fill: 'blue'},
+        // }
+    });
+
+    const bellaView = document.querySelector('.bella_view') ;
+    bellaView.addEventListener('click', function (e) {
+        e.preventDefault();
 
     });
 
