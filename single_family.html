@@ -21,7 +21,7 @@
     <div class="row p-4">
         <ul class="ul-dots">
             <li class="li-style">
-                <a class="nav_link" href="#section--1">About us</a>
+                <a class="nav_link" href="index.html#section--1">About us</a>
             </li>
             <li class="li-style" id="show-sub-menu">
                 <a href="#">Investments
@@ -76,7 +76,7 @@
     </div>
     <div class="row p-0 m-0">
         <div class="col-md-7 d-flex justify-content-end pt-5 pb-5">
-            <div id="map" style="width: 500px; height: 300px;"></div>
+            <div id="map" style="width: 500px; height: 400px;"></div>
         </div>
         <div class="col-md-4 pt-5 pb-5">
             <div id="clicked-state" class="bella_view">
@@ -91,10 +91,10 @@
 <div class="row m-0 model-bg-transparent remove-hidden hidden">
     <div class="col-md-12 model-center">
         <div class="model-border">
-            <div class="row model-border-radius">
+            <div class="row model-border-radius" style="height: auto">
                 <div class="col-md-3 m-0 p-0">
-                    <div class="img-main-center">
-                        <div>
+                    <div class="img-main-center" style="margin-top: 0px; padding-top: 15px">
+                        <div class="p-3">
                             <img src="images/havenrc_content/single-family/Bella-View.jpg" alt="model-img-1"/>
                         </div>
                     </div>
@@ -222,8 +222,8 @@
         // The click action
         click: function(event, data) {
             if(data.name == 'GA'){
-                $('#clicked-state').empty();
-                $('#clicked-state').append( "<div class=\"state-title\">\n" +
+                // $('#clicked-state').empty();
+                $('#clicked-state').html( "<div class=\"state-title\">\n" +
                     "                    <h2>Georgia</h2>\n" +
                     "                </div>\n" +
                     "                <ul class=\"state-ul m-0 p-0\">\n" +
@@ -234,6 +234,13 @@
                     "                    <li><a href=\"#\">Moss Pointe, located in Canton</a></li>\n" +
                     "                    <li><a href=\"#\">Magnolia Trace, located in Holly Springs</a></li>\n" +
                     "                </ul>" );
+                $('.bella_view').click(function(){
+                    $('.remove-hidden').removeClass('hidden');
+                })
+
+                $('.close').click(function(){
+                    $('.remove-hidden').addClass('hidden');
+                })
                     // .text('You clicked: '+data.name)
 
             }else {
