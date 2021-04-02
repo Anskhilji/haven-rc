@@ -34,6 +34,32 @@ document.querySelectorAll('.nav_link').forEach(el => {
     })
 });
 
+let aboutUs = sessionStorage.getItem('aboutus');
+let news = sessionStorage.getItem('news');
+let singleFamily = sessionStorage.getItem('singleFamily');
+if (aboutUs == "true"){
+    document.querySelector('#section--1').scrollIntoView({
+        behavior: "smooth"
+    });
+    navBar.classList.add('d-none');
+    sessionStorage.clear();
+}
+
+if (news == "true"){
+    document.querySelector('#section--4').scrollIntoView({
+        behavior: "smooth"
+    });
+    navBar.classList.add('d-none');
+    sessionStorage.clear();
+}
+
+if (singleFamily == "true"){
+    document.querySelector('#section--3').scrollIntoView({
+        behavior: "smooth"
+    });
+    navBar.classList.add('d-none');
+    sessionStorage.clear();
+}
 /*ENd nav link smooth scrolling*/
 
 

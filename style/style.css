@@ -56,11 +56,11 @@
     height: 100vh;
 }
 .carousel-caption {
-    right: 10% !important;
-    left: 10% !important;
-    bottom: 50px;
+    right: 8% !important;
+    left: 49% !important;
+    bottom: 100px;
+    text-align: left;
 }
-
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
     .logo {
@@ -258,7 +258,7 @@
     display: flex;
     flex: 1;
     flex-wrap: wrap;
-    gap: 17px;
+    gap: 20px;
     justify-content: center
 }
 
@@ -267,7 +267,7 @@
     display: flex;
     flex: 1;
     flex-wrap: wrap;
-    gap: 17px;
+    gap: 20px;
     justify-content: center
 }
 

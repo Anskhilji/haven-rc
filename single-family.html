@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/style.css"/>
     <link rel="stylesheet" href="style/single-family.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <script defer src="js/custom.js"></script>
+<!--    <script defer src="js/custom.js"></script>-->
     <title>Single-Family</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
     <div class="row p-4">
         <ul class="ul-dots">
             <li class="li-style">
-                <a class="nav_link" href="index.html#section--1">About us</a>
+                <a class="nav_link aboutUs" href="index.html">About us</a>
             </li>
             <li class="li-style" id="show-sub-menu">
                 <a href="#">Investments
@@ -30,23 +30,23 @@
             </li>
             <ul class="sub-menu hidden" id="sub_menu_hidden">
                 <li class="li-style" style="list-style-type: none">
-                    <a class="nav_link" href="#section--3">Single Family Rentals</a>
+                    <a class="nav_link single-fam" href="index.html">Single Family Rentals</a>
                 </li>
                 <li class="li-style" style="list-style-type: none">
-                    <a class="nav_link" href="#section--3">Multi-Family</a>
+                    <a class="nav_link single-fam" href="index.html">Multi-Family</a>
                 </li>
                 <li class="li-style" style="list-style-type: none">
-                    <a class="nav_link" href="#section--3">Residential Development</a>
+                    <a class="nav_link single-fam" href="index.html">Residential Development</a>
                 </li>
             </ul>
             <li class="li-style">
                 <a href="https://investors.havenrc.com/login" target="_blank">Investors</a>
             </li>
             <li class="li-style">
-                <a class="nav_link" href="#section--4">News</a>
+                <a class="nav_link news" href="index.html">News</a>
             </li>
             <li class="li-style">
-                <a class="nav_link" href="#section--5">Contact us</a>
+                <a class="nav_link_contact" href="#section--5">Contact us</a>
             </li>
         </ul>
     </div>
@@ -105,7 +105,7 @@
                             <i class="fa fa-times close" aria-hidden="true" style="color: black"></i>
                         </div>
                         <div class="heading-bella-view">
-                            <h1>Bella View, located in Snellvila</h1>
+                            <h1>Bella View, GA</h1>
                         </div>
                         <p>
                             Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
@@ -218,21 +218,24 @@
 <script>
 
     $('#map').usmap({
-        showLabels: false,
+        showLabels: true,
         // The click action
         click: function(event, data) {
-            if(data.name == 'GA'){
-                // $('#clicked-state').empty();
+            // $('#clicked-state').text('You clicked: '+data.name);
+                // .parent().effect('highlight', {color: '#C7F464'}, 2000);
+
+
+                    if(data.name == 'GA'){
                 $('#clicked-state').html( "<div class=\"state-title\">\n" +
                     "                    <h2>Georgia</h2>\n" +
                     "                </div>\n" +
                     "                <ul class=\"state-ul m-0 p-0\">\n" +
-                    "                    <li><a href=\"#\" class='bella_view'>Bella View, located in Snellvila</a></li>\n" +
-                    "                    <li><a href=\"#\">The Reserve, located in Dallas</a></li>\n" +
-                    "                    <li><a href=\"#\">Macland Phase 2, located in Dallas</a></li>\n" +
-                    "                    <li><a href=\"#\">Trickum Hills, located in Lawrence ville</a></li>\n" +
-                    "                    <li><a href=\"#\">Moss Pointe, located in Canton</a></li>\n" +
-                    "                    <li><a href=\"#\">Magnolia Trace, located in Holly Springs</a></li>\n" +
+                    "                    <li><a href=\"#\" class='bella_view'>Bella View, GA</a></li>\n" +
+                    "                    <li><a href=\"#\">The Reserve, GA</a></li>\n" +
+                    "                    <li><a href=\"#\">Macland Phase 2, GA</a></li>\n" +
+                    "                    <li><a href=\"#\">Trickum Hills, GA</a></li>\n" +
+                    "                    <li><a href=\"#\">Moss Pointe, GA</a></li>\n" +
+                    "                    <li><a href=\"#\">Magnolia Trace, GA</a></li>\n" +
                     "                </ul>" );
                 $('.bella_view').click(function(){
                     $('.remove-hidden').removeClass('hidden');
@@ -241,26 +244,78 @@
                 $('.close').click(function(){
                     $('.remove-hidden').addClass('hidden');
                 })
-                    // .text('You clicked: '+data.name)
 
             }else {
                 $('#clicked-state').empty();
             }
 
-                // .parent().effect('highlight', {color: '#C7F464'}, 2000);
 
         },
         stateStyles: {fill: '#E9E9E9'},
-        // stateSpecificStyles: {
-        //     'GA': {fill: 'blue'},
-        // }
+        stateSpecificStyles: {
+            'GA': {fill: '#bacbd9'},
+            'NC': {fill: '#bacbd9'},
+            'IL': {fill: '#bacbd9'},
+            'TX': {fill: '#bacbd9'},
+            'AZ': {fill: '#bacbd9'},
+            'NV': {fill: '#bacbd9'},
+            'CA': {fill: '#bacbd9'},
+        }
+    });
+    // <!--    Navbar JS-->
+    const openNav = document.querySelector('#open-nav');
+    const navBar = document.querySelector('#navbar');
+    const closeNav = document.querySelector('#cancel_nav');
+    const showSubMenu = document.querySelector('#show-sub-menu');
+    const removeHiddenSubMenu = document.querySelector('#sub_menu_hidden');
+
+    openNav.addEventListener('click', function () {
+        navBar.classList.remove('d-none');
     });
 
-    const bellaView = document.querySelector('.bella_view') ;
-    bellaView.addEventListener('click', function (e) {
+    closeNav.addEventListener('click',function () {
+        navBar.classList.add('d-none');
+
+    });
+    showSubMenu.addEventListener('click', function (e){
+        e.preventDefault();
+        removeHiddenSubMenu.classList.toggle('hidden');
+    });
+    // <!--   End Navbar JS-->
+
+    /*start nav link smooth scrolling*/
+    document.querySelector('.nav_link_contact').addEventListener('click', function (e) {
         e.preventDefault();
 
+        const id = this.getAttribute('href');
+        document.querySelector(id).scrollIntoView({
+            behavior: "smooth"
+        });
+        navBar.classList.add('d-none');
     });
+    /*ENd nav link smooth scrolling*/
+
+// start for index page scroll Scroll
+const aboutUs = document.querySelector('.aboutUs');
+        aboutUs.addEventListener('click', function (e) {
+            // e.preventDefault();
+            sessionStorage.setItem('aboutus', 'true');
+        });
+
+const news = document.querySelector('.news');
+    news.addEventListener('click', function (e) {
+            // e.preventDefault();
+            sessionStorage.setItem('news', 'true');
+        });
+
+    const singleFam = document.querySelectorAll('.single-fam').forEach(e=>{
+        e.addEventListener('click', function (e) {
+            // e.preventDefault();
+            sessionStorage.setItem('singleFamily', 'true');
+        });
+    });
+
+    // end for index page scroll Scroll
 
 </script>
 </body>

@@ -289,7 +289,7 @@
      */
     _initCreateLabels: function() {
       var R = this.paper; // shorter name for usage here
-      var neStates = ['VT', 'NH', 'MA', 'RI', 'CT', 'NJ', 'DE', 'MD', 'DC'];
+      var neStates = ['CA', 'NV', 'AZ', 'TX', 'IL', 'GA', 'NC'];
       
       // calculate the values for placing items
       var neBoxX = 860;
