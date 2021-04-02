@@ -242,7 +242,7 @@
     padding: 50px 0px 50px 0px;
 }
 .teams-img-main {
-    padding: 20px 0px 20px 0px;
+    padding: 50px 0px 20px 0px;
 }
 
 .team-img-outer1 {
@@ -574,7 +574,7 @@
 
 /*nav start*/
 .nav-bg {
-    height: 100vh;
+    height: 148vh;
     width: 100%;
     position: absolute;
     top: 0;
@@ -607,7 +607,7 @@
 }
 
 .ul-dots .li-style a:hover {
-    background: #FFFFFF;
+    color: #5bb7d1;
     padding: 10px 20px;
     color: #3d3d3d;
 }
