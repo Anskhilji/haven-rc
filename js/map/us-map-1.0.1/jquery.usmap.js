@@ -97,9 +97,9 @@
     // Labels
     'showLabels' : true,
     
-    'labelWidth': 20,
+    'labelWidth': 25,
     
-    'labelHeight': 15,
+    'labelHeight': 18,
     
     'labelGap' : 6,
     
@@ -292,8 +292,8 @@
       var neStates = ['CA', 'NV', 'AZ', 'TX', 'IL', 'GA', 'NC'];
       
       // calculate the values for placing items
-      var neBoxX = 860;
-      var neBoxY = 220;
+      var neBoxX = 920;
+      var neBoxY = 200;
       var oWidth = this.options.labelWidth;
       var oHeight = this.options.labelHeight;
       var oGap = this.options.labelGap;
@@ -303,7 +303,7 @@
       var shapeHeight = oHeight/this.scale;
       
       var colWidth = (oWidth+oGap)/this.scale;
-      var downBy = (oHeight+oGap)/this.scale*0.5;
+      var downBy = (oHeight+oGap)/this.scale*1;
       
       var shapeRadius = oRadius/this.scale;
       
@@ -317,7 +317,7 @@
         state = neStates[i];
         
         // position
-        x = ((i+1)%2) * colWidth + neBoxX;
+        x = ((i+1)%1) * colWidth + neBoxX;
         y = i*downBy + neBoxY;
         
         // attributes for styling the backing

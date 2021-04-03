@@ -300,6 +300,8 @@
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(37, 37, 37, 0.85);
+    display: flex;
+    justify-content: center;align-items: center;
 }
 
 .overlay-container:hover .overlay {
@@ -310,24 +312,24 @@
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*-webkit-transform: translate(-50%, -50%);*/
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*transform: translate(-50%, -50%);*/
+    /*text-align: center;*/
 }
 
 .caption {
     color: white;
     font-size: 13px;
     position: absolute;
-    top: 80%;
-    left: 48.5%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    top: 60%;
+    /*left: 48.5%;*/
+    /*-webkit-transform: translate(-50%, -50%);*/
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*transform: translate(-50%, -50%);*/
+    /*text-align: center;*/
 }
 
 /*img model popup*/
