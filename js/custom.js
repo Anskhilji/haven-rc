@@ -37,6 +37,7 @@ document.querySelectorAll('.nav_link').forEach(el => {
 let aboutUs = sessionStorage.getItem('aboutus');
 let news = sessionStorage.getItem('news');
 let singleFamily = sessionStorage.getItem('singleFamily');
+let returnToInvestment = sessionStorage.getItem('return_to_investment');
 if (aboutUs == "true"){
     document.querySelector('#section--1').scrollIntoView({
         behavior: "smooth"
@@ -54,6 +55,14 @@ if (news == "true"){
 }
 
 if (singleFamily == "true"){
+    document.querySelector('#section--3').scrollIntoView({
+        behavior: "smooth"
+    });
+    navBar.classList.add('d-none');
+    sessionStorage.clear();
+}
+
+if (returnToInvestment == "true"){
     document.querySelector('#section--3').scrollIntoView({
         behavior: "smooth"
     });

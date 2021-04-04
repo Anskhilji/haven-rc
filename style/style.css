@@ -100,8 +100,6 @@
 /*End section 1 slider*/
 
 
-
-
 /* Section 1*/
 .img-bg {
     background: url("../images/havenrc_content/2-WhoWeAre/1.jpg") no-repeat center center;
@@ -234,7 +232,7 @@
 .p-mb-setting {
     margin-bottom: 0px;
     overflow: hidden;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /*teams image with overlay*/
@@ -576,7 +574,7 @@
 
 /*nav start*/
 .nav-bg {
-    height: 148vh;
+    height: 154vh;
     width: 100%;
     position: absolute;
     top: 0;
@@ -590,7 +588,7 @@
 .ul-dots {
     list-style: none;
     width: 100%;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 

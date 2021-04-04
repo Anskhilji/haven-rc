@@ -88,7 +88,7 @@
         </div>
     </div>
     <div class="text-center pb-5">
-        <a href="#">return to Investments</a>
+        <a href="index.html" class="return_to_investment">return to Investments</a>
     </div>
 </div>
 
@@ -320,6 +320,11 @@ const news = document.querySelector('.news');
         });
     });
 
+    const returnToInvestment = document.querySelector('.return_to_investment');
+    returnToInvestment.addEventListener('click', function (e) {
+        // e.preventDefault();
+        sessionStorage.setItem('return_to_investment', 'true');
+    });
     // end for index page scroll Scroll
 
 </script>
