@@ -4,6 +4,7 @@ const openNav = document.querySelector('#open-nav');
 const navBar = document.querySelector('#navbar');
 const closeNav = document.querySelector('#cancel_nav');
 const showSubMenu = document.querySelector('#show-sub-menu');
+const arrow = document.querySelector('.down-arrow');
 const removeHiddenSubMenu = document.querySelector('#sub_menu_hidden');
 
 openNav.addEventListener('click', function () {
@@ -17,6 +18,7 @@ closeNav.addEventListener('click',function () {
 showSubMenu.addEventListener('click', function (e){
     e.preventDefault();
     removeHiddenSubMenu.classList.toggle('hidden');
+    arrow.classList.toggle('d-none');
 });
 
 

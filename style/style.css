@@ -588,7 +588,7 @@
 .ul-dots {
     list-style: none;
     width: 100%;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 
@@ -627,4 +627,10 @@
     display: none;
 }
 
+.sub-menu .li-style {
+   padding: 0px;
+}
+.sub-menu li a{
+    font-size: 25px;
+}
 /*nav end*/
