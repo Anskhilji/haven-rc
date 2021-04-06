@@ -35,6 +35,8 @@ document.querySelectorAll('.nav_link').forEach(el => {
             behavior: "smooth"
         });
         navBar.classList.add('d-none');
+        openNav.classList.remove('d-none');
+
     })
 });
 
@@ -47,6 +49,7 @@ if (aboutUs == "true"){
         behavior: "smooth"
     });
     navBar.classList.add('d-none');
+    openNav.classList.remove('d-none');
     sessionStorage.clear();
 }
 
@@ -55,6 +58,7 @@ if (news == "true"){
         behavior: "smooth"
     });
     navBar.classList.add('d-none');
+    openNav.classList.remove('d-none');
     sessionStorage.clear();
 }
 
@@ -63,6 +67,7 @@ if (singleFamily == "true"){
         behavior: "smooth"
     });
     navBar.classList.add('d-none');
+    openNav.classList.remove('d-none');
     sessionStorage.clear();
 }
 
@@ -71,6 +76,7 @@ if (returnToInvestment == "true"){
         behavior: "smooth"
     });
     navBar.classList.add('d-none');
+    openNav.classList.remove('d-none');
     sessionStorage.clear();
 }
 /*ENd nav link smooth scrolling*/
