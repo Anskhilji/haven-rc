@@ -580,6 +580,7 @@
 
 /*nav start*/
 .nav-bg {
+    background: url('../images/havenrc_content/navbg.jpg');
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -587,7 +588,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 69, 118, 0.9);
+    /*background: rgba(0, 69, 118, 0.9);*/
     z-index: 99;
 }
 
