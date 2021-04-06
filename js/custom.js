@@ -9,10 +9,12 @@ const removeHiddenSubMenu = document.querySelector('#sub_menu_hidden');
 
 openNav.addEventListener('click', function () {
     navBar.classList.remove('d-none');
+    openNav.classList.add('d-none');
 });
 
 closeNav.addEventListener('click',function () {
     navBar.classList.add('d-none');
+    openNav.classList.remove('d-none');
 
 });
 showSubMenu.addEventListener('click', function (e){

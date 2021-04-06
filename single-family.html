@@ -272,19 +272,23 @@
     const navBar = document.querySelector('#navbar');
     const closeNav = document.querySelector('#cancel_nav');
     const showSubMenu = document.querySelector('#show-sub-menu');
+    const arrow = document.querySelector('.down-arrow');
     const removeHiddenSubMenu = document.querySelector('#sub_menu_hidden');
 
     openNav.addEventListener('click', function () {
         navBar.classList.remove('d-none');
+        openNav.classList.add('d-none');
     });
 
     closeNav.addEventListener('click',function () {
         navBar.classList.add('d-none');
+        openNav.classList.remove('d-none');
 
     });
     showSubMenu.addEventListener('click', function (e){
         e.preventDefault();
         removeHiddenSubMenu.classList.toggle('hidden');
+        arrow.classList.toggle('d-none');
     });
     // <!--   End Navbar JS-->
 
