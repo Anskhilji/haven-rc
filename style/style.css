@@ -57,8 +57,8 @@
 }
 .carousel-caption {
     right: 8% !important;
-    left: 49% !important;
-    bottom: 100px;
+    left: 60% !important;
+    bottom: 90px;
     text-align: left;
 }
 /* On screens that are 992px or less, set the background color to blue */
@@ -448,6 +448,12 @@
 .inline-text{
     width: 500px;
 }
+
+@media screen and (max-width: 992px) {
+    .inline-text{
+       width: 100%
+    }
+}
 /*Start Section 4*/
 .invest-title {
     color: #FFFFFF;
@@ -581,7 +587,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: #004576;
+    background: rgba(0, 69, 118, 0.9);
     z-index: 99;
 }
 
