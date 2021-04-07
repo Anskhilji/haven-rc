@@ -442,7 +442,7 @@
 
 .counter-big {
     font-size: 35px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     color: #004576;
 }
 .inline-text{
