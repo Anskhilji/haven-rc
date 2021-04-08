@@ -5,6 +5,7 @@
 /*html{*/
 /*    scroll-behavior: smooth;*/
 /*}*/
+
 .video-style {
     width: 100vw;
     height: 100vh;
@@ -62,7 +63,28 @@
     text-align: left;
 }
 /* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1200px) {
+    .carousel-caption {
+        right: 8% !important;
+        left: 60% !important;
+        bottom:50px;
+        text-align: left;
+    }
+    .carousel-caption h5{
+        font-size: 20px
+    }
+}
+
 @media screen and (max-width: 992px) {
+    .carousel-caption {
+        right: 8% !important;
+        left: 50% !important;
+        bottom: 40px;
+        text-align: left;
+    }
+    .carousel-caption h5{
+        font-size: 18px
+    }
     .logo {
         width: 20%;
     }
@@ -75,6 +97,18 @@
     .full-view-port{
         height: auto;
     }
+}
+@media screen and (max-width: 768px) {
+    .carousel-caption {
+        right: 8% !important;
+        left: 40% !important;
+        bottom: 40px;
+        text-align: left;
+    }
+    .carousel-caption h5{
+        font-size: 18px
+    }
+
 }
 
 @media screen and (max-width: 720px) {
@@ -92,8 +126,9 @@
 
     }
     .fa-3x {
-        font-size: 2.3em !important;
+        font-size: 2.1em !important;
         top: 40px;
+        right: 55px;
     }
 }
 
@@ -177,6 +212,46 @@
     background-color: #004576;
 }
 
+
+@media screen and (max-width: 800px) {
+    .nv-pill a:after {
+        right: -21px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .hv-title .cochin {
+        font-size: 1em;
+    }
+
+    .nv-pill a:after {
+        right: -17px;
+    }
+
+
+}
+@media screen and (max-width: 767px) {
+    .br{
+        display: none;
+    }
+    .br-tab {
+        border-right: none !important;
+        min-height: 100px!important;
+    }
+    .nv-pill a:after {
+        display: none;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        background-color: #007BFF;
+        color: #ffffff;
+    }
+    .clr {
+        margin-bottom: 10px;
+    }
+
+}
+
 /*End Section 1*/
 
 
@@ -214,9 +289,9 @@
 }
 
 
-.nv-pill1 a.active:after {
-    background-color: #ffffff;
-}
+/*.nv-pill1 a.active:after {*/
+/*    background-color: #ffffff;*/
+/*}*/
 
 .invest-h2 {
     font-family: "Cochin LT W01 Roman";
@@ -234,6 +309,41 @@
     overflow: hidden;
     font-size: 14px;
 }
+
+@media screen and (max-width: 767px) {
+    .invest-br{
+        display: none;
+    }
+    .invest-br-tab {
+        border-right: none !important;
+        min-height: 100px!important;
+    }
+    .nv-pill1 a:after {
+        display: none;
+    }
+    .nv-pill1  {
+        padding-left: 10px;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        background-color: #007BFF !important;
+        color: #ffffff;
+    }
+
+    .clr1 {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
 
 /*teams image with overlay*/
 .our-team-outer-hw{
@@ -401,6 +511,48 @@
 }
 
 
+@media screen and (max-width: 992px) {
+    .heading > h1 {
+        font-size: 2rem;
+    }
+
+    .heading > h1 > p{
+        font-size: 18px
+    }
+    .img-main-center > div {
+        width: 182px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .heading > h1 > p{
+        font-size: 14px
+    }
+    .close-relative{
+        position: relative;
+    }
+    .model-close{
+        position: absolute;
+        top: -240px;
+        right: 20px;
+    }
+}
+@media screen and (max-width: 530px) {
+
+    .heading > h1 {
+        font-size: 18px
+    }
+
+    .heading > h1 > span{
+        font-size: 12px;
+    }
+    .heading > h1 > p{
+        font-size: 12px
+    }
+
+}
 /*End Section 2*/
 
 .counter-main {
@@ -446,7 +598,7 @@
     color: #004576;
 }
 .inline-text{
-    width: 500px;
+    width: 976px;
 }
 
 @media screen and (max-width: 992px) {
@@ -454,6 +606,22 @@
        width: 100%
     }
 }
+
+@media screen and (max-width: 767px) {
+    .inline-text{
+       width: 100%
+    }
+    .border-bottom {
+        border-bottom: none !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .counter-main > h2 {
+        font-size: 25px;
+    }
+}
+
 /*Start Section 4*/
 .invest-title {
     color: #FFFFFF;
@@ -523,6 +691,12 @@
     border: 0px;
 }
 
+@media screen and (max-width: 520px) {
+    .contact-logo h2 {
+        font-size: 22px;
+    }
+}
+
 /*End Section 4*/
 .news-title {
     color: #004576;
@@ -534,6 +708,19 @@
     font-family: "Cochin LT W01 Roman";
     font-weight: bold;
 
+}
+
+
+@media screen and (max-width: 768px) {
+    .news-title .cochin {
+      margin-left: 20px;
+
+    }
+}
+@media screen and (max-width: 520px) {
+    .news-link h3 {
+        font-size: 18px;
+    }
 }
     /*End Section 4*/
 /* start invest tabs css*/
@@ -576,6 +763,29 @@
     text-decoration: none;
     color: #ffffff;
 }
+@media screen and (max-width: 576px) {
+    .footer-logo {
+        max-width: 310px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer-logo {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nv-pill1 a:after{
+        right: 9px;
+    }
+
+}
+@media screen and (max-width: 360px) {
+    .address-content {
+       font-size: 14px;
+    }
+}
 /*End Section 5*/
 
 /*nav start*/
@@ -595,7 +805,7 @@
 .ul-dots {
     list-style: none;
     width: 100%;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 
@@ -640,4 +850,39 @@
 .sub-menu li a{
     font-size: 25px;
 }
+
+
+@media screen and (max-width: 576px) {
+    .ul-dots {
+        font-size: 30px;
+    }
+    .cancel-btn {
+        float: right;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+    .ul-dots .li-style {
+        padding-left: 0px;
+    }
+    .sub-menu li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ul-dots {
+        font-size: 25px;
+        padding-inline-start: 0px;
+    }
+    .cancel-btn {
+        float: right;
+        margin-right: 30px;
+        margin-top: 50px;
+    }
+    .sub-menu li a {
+        font-size: 15px;
+    }
+}
+
+
 /*nav end*/
