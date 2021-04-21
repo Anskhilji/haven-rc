@@ -76,7 +76,7 @@
             <div class="row p-0 m-0">
                 <div class="col-md-6">
                     <div>
-                        <a href="https://video.wixstatic.com/video/338d2f_7c1f6168fd2b47daa3c5c6cb76898fff/720p/mp4/file.mp4"
+                        <a href="https://video.wixstatic.com/video/338d2f_9eead3862af547968d9f7b419d81b95c/480p/mp4/file.mp4"
                         ><img
                                 src="images/havenrc_content/news/news1.jpg"
                                 width="100%"
@@ -84,7 +84,7 @@
                         /></a>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <a href="https://video.wixstatic.com/video/338d2f_7c1f6168fd2b47daa3c5c6cb76898fff/720p/mp4/file.mp4"
+                        <a href="https://video.wixstatic.com/video/338d2f_9eead3862af547968d9f7b419d81b95c/480p/mp4/file.mp4"
                         ><h3 class="news-headline">
                             The Future of Single Family Homes for Rent
                         </h3></a
@@ -226,42 +226,12 @@
 
         </div>
     </div>
-</div>
-<!-- End News-->
 
-<!--bella view model-->
-<div class="row m-0 model-bg-transparent remove-hidden hidden">
-    <div class="col-md-12 model-center">
-        <div class="model-border">
-            <div class="row model-border-radius" style="height: auto">
-                <div class="col-md-3 m-0 p-0">
-                    <div class="img-main-center" style="margin-top: 0px; padding-top: 15px">
-                        <div class="p-3">
-                            <img src="images/havenrc_content/single-family/Bella-View.jpg" alt="model-img-1"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9 p-4">
-                    <div>
-                        <div class="model-close">
-                            <i class="fa fa-times close" aria-hidden="true" style="color: black"></i>
-                        </div>
-                        <div class="heading-bella-view">
-                            <h1>Bella View, GA</h1>
-                        </div>
-                        <p>
-                            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="text-center mt-5">
+        <a href="index.html" class="return_to_news">return to homepage</a>
     </div>
 </div>
-<!--End bella view model-->
-<!--end map-->
-
-
+<!-- End News-->
 
 <!--    SECTION 4 -->
 <div class="container-fluid" id="section--5" style="margin-top: 100px">
@@ -406,6 +376,12 @@
 
     const news = document.querySelector('.news');
     news.addEventListener('click', function (e) {
+        // e.preventDefault();
+        sessionStorage.setItem('news', 'true');
+    });
+
+    const returnToNews = document.querySelector('.return_to_news');
+    returnToNews.addEventListener('click', function (e) {
         // e.preventDefault();
         sessionStorage.setItem('news', 'true');
     });

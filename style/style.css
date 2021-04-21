@@ -8,7 +8,7 @@
 
 .video-style {
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     object-fit: cover
 }
 
@@ -54,12 +54,12 @@
 }
 
 .full-view-port {
-    height: 100vh;
+    height: 60vh;
 }
 .carousel-caption {
     right: 8% !important;
     left: 60% !important;
-    bottom: 90px;
+    bottom: 20px;
     text-align: left;
 }
 /* On screens that are 992px or less, set the background color to blue */
