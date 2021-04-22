@@ -178,6 +178,7 @@
 
 /*tabs*/
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    /*background-color: #F0FAFF;*/
     background-color: #F0FAFF;
     color: gray;
 }
@@ -219,12 +220,10 @@
     }
 
 }
-
 @media screen and (max-width: 768px) {
     .hv-title .cochin {
         font-size: 1em;
     }
-
     .nv-pill a:after {
         right: -17px;
     }
@@ -289,9 +288,9 @@
 }
 
 
-/*.nv-pill1 a.active:after {*/
-/*    background-color: #ffffff;*/
-/*}*/
+.nv-pill1 a.active:after {
+    background-color: #ffffff;
+}
 
 .invest-h2 {
     font-family: "Cochin LT W01 Roman";
@@ -481,9 +480,10 @@
     align-items: center;
 }
 
-.heading > h1, span {
+.heading > h1 {
     font-family: "Cochin LT W01 Roman";
     font-weight: bold;
+    color: #333333;
 }
 
 .img-main-center {
