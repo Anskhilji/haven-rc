@@ -483,6 +483,9 @@
 .heading > h1 {
     font-family: "Cochin LT W01 Roman";
     font-weight: bold;
+    color: #000000;
+}
+.heading > h1:nth-child(2) {
     color: #666666;
 }
 
