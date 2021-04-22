@@ -277,6 +277,37 @@
 </div>
 <!--End The Moss-->
 
+<!--The Ashwood Place, IL-->
+<div class="row m-0 model-bg-transparent remove-hidden-ashwood hidden">
+    <div class="col-md-12 model-center">
+        <div class="model-border">
+            <div class="row model-border-radius" style="height: auto">
+                <div class="col-md-3 m-0 p-0">
+                    <div class="img-main-center" style="margin-top: 0px; padding-top: 15px">
+                        <div class="p-3">
+                            <img src="images/havenrc_content/single-family/popup-Ashwood.jpg" alt="popup-ashwood"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 p-4">
+                    <div>
+                        <div class="model-close">
+                            <i class="fa fa-times close" aria-hidden="true" style="color: black"></i>
+                        </div>
+                        <div class="heading-bella-view">
+                            <h1>Ashwood Place</h1>
+                        </div>
+                        <p>
+                            Ashwood Place is a newly constructed 60-home dedicated rental community in the Chicago suburb of Naperville, IL and one of the first DRCs in Chicagoland area. Each of the brick and vinyl clad single-story residences at Ashwood Place feature a two-bedroom, two-bath floorplan with 1,350 square feet of living space.  Interior amenities include central air, cathedral ceilings, granite countertops, stainless steel energy efficient appliances, washer and dryer, wood style flooring and a two-car attached garage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End The Ashwood Place, IL-->
+
 <!--end map-->
 
 <!--    SECTION 4 -->
@@ -441,6 +472,21 @@
                 $('.close').click(function(){
                     $('.remove-hidden-magnolia').addClass('hidden');
                 });
+            }else if(data.name == 'IL'){
+                $('#clicked-state').html( "<div class=\"state-title\">\n" +
+                    "                    <h2>Illinois</h2>\n" +
+                    "                </div>\n" +
+                    "                <ul class=\"state-ul m-0 p-0\">\n" +
+                    "                    <li><a href=\"\" class='ashwood'>Ashwood Place, IL</a></li>\n" +
+                    "                </ul>" );
+                $('.ashwood').click(function(e){
+                    e.preventDefault();
+                    $('.remove-hidden-ashwood').removeClass('hidden');
+                });
+                $('.close').click(function(e){
+                    $('.remove-hidden-ashwood').addClass('hidden');
+                });
+
             }else {
                 $('#clicked-state').empty();
             }
