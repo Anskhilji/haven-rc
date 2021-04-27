@@ -308,6 +308,39 @@
 </div>
 <!--End The Ashwood Place, IL-->
 
+<!--Start Harrison Landing Townes in Simpsonville-->
+<div class="row m-0 model-bg-transparent remove-hidden-south-carolina hidden">
+    <div class="col-md-12 model-center">
+        <div class="model-border">
+            <div class="row model-border-radius" style="height: auto; overflow: hidden; overflow-y: auto">
+                <div class="col-md-3 m-0 p-0">
+                    <div class="img-main-center" style="margin-top: 0px; padding-top: 15px">
+                        <div class="p-3">
+                            <img src="images/havenrc_content/single-family/Harrison.jpg" alt="popup-ashwood"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 p-4">
+                    <div>
+                        <div class="model-close">
+                            <i class="fa fa-times close" aria-hidden="true" style="color: black"></i>
+                        </div>
+                        <div class="heading-bella-view">
+                            <h1>Harrison Landing Townes in Simpsonville</h1>
+                        </div>
+                        <p>
+                            Harrison Landing Townes is being developed by a national homebuilder on an 18-acre site at 106 McGuires Place in Simpsonville, SC 21 miles SE of downtown Greenville.  Each of the two-story, 1,564-square-foot townhomes feature three-bedrooms, two-and-a-half baths, attached garage, luxury vinyl plank floors, stainless-steel appliances, granite countertops, tile backsplash and nine-foot ceilings on the first floor.
+                            Community amenities include a dog park, playground and walking trail.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Harrison Landing Townes in Simpsonville-->
+
+
 <!--end map-->
 
 <!--    SECTION 4 -->
@@ -487,6 +520,21 @@
                     $('.remove-hidden-ashwood').addClass('hidden');
                 });
 
+            }else if(data.name == 'SC'){
+                $('#clicked-state').html( "<div class=\"state-title\">\n" +
+                    "                    <h2>South Carolina</h2>\n" +
+                    "                </div>\n" +
+                    "                <ul class=\"state-ul m-0 p-0\">\n" +
+                    "                    <li><a href=\"\" class='south-carolina'>Harrison Landing Townes in Simpsonville</a></li>\n" +
+                    "                </ul>" );
+                $('.south-carolina').click(function(e){
+                    e.preventDefault();
+                    $('.remove-hidden-south-carolina').removeClass('hidden');
+                });
+                $('.close').click(function(e){
+                    $('.remove-hidden-south-carolina').addClass('hidden');
+                });
+
             }else {
                 $('#clicked-state').empty();
             }
@@ -502,6 +550,7 @@
             'AZ': {fill: '#bacbd9'},
             'NV': {fill: '#bacbd9'},
             'CA': {fill: '#bacbd9'},
+            'SC': {fill: '#bacbd9'},
         }
     });
     // <!--    Navbar JS-->
